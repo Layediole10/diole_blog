@@ -1,0 +1,104 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #F8F8F8;
+}
+
+#logo{
+
+    float: left;
+    text-transform: uppercase;
+    margin: 20px 20px 20px 100px;
+    padding: 20px;
+    font-size: 18px;
+    letter-spacing: 5px;
+    line-height: 20px;
+}
+
+header ul{
+
+    list-style-type: none;
+    
+}
+
+header ul li {
+    display: inline-block;
+    text-transform: uppercase;
+    margin-right: 50px;
+    padding: 20px;
+    letter-spacing: 5px;
+    line-height: 20px;
+    
+
+}
+
+header ul li a {
+
+    text-decoration: none;
+    
+}
+
+/* main */
+
+main {
+    
+    height: 80px;
+    width: 1140px;
+    margin-left: 10%;
+}
+
+#btn{
+
+    background-color: #286090;
+    font-size: 16px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 7px;
+    border-style: none;
+}
+/* ---------------publication area------------------ */
+#box{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: 5%;
+}
+
+#box label{
+
+    font-weight: bolder;
+}
+
+#inputText{
+
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+#description{
+
+    height: 150px;
+}
+
+#btn-new-pub{
+     
+    width: 80px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+/* --------------------hide-pub------------------------- */
+
+#new-pub{
+
+    display: none;
+}
