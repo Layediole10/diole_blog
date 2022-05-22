@@ -20,11 +20,31 @@ class Pulish {
     }
 }
 
+let arrBlog = [];
+
+if(localStorage.getItem("arrBlog") != null){
+
+  arrBlog = JSON.parse(localStorage.getItem("arrBlog"));
+}
+
 function retrieveText() {
     
     let pub = new Pulish(inputText.value, textDescription.value);
+    arrBlog.push(pub);
+    localStorage.setItem("arrBlog", JSON.stringify(arrBlog));
+    
     newPublish(pub);
+
 }
+
+function taskBlog(){
+
+    for(let item of arrBlog){
+
+        newPublish(item);
+    }
+}
+taskBlog();
 
 function newPublish(pub){
 
@@ -51,6 +71,8 @@ function poster() {
     // alert("publication");
     firstPub.style.display = "none";
     newPub.style.display = "block";
+    inputText.value = "";
+    textDescription.value = "";
 
     
 }
