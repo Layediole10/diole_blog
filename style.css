@@ -121,9 +121,9 @@ main {
     #box{
         display: flex;
         flex-direction: column;
-        width: 520px;
+        width: 420px;
 
-        margin-left: 5%;
+        
     }
 
     #first-pub{
