@@ -32,6 +32,7 @@ function retrieveText() {
     let pub = new Pulish(inputText.value, textDescription.value);
     arrBlog.push(pub);
     localStorage.setItem("arrBlog", JSON.stringify(arrBlog));
+
     
     newPublish(pub);
 
@@ -77,3 +78,12 @@ function poster() {
     
 }
 bouton.addEventListener("click", poster);
+
+function textHidden() {
+
+    let long = textDescription.value
+    
+    if (long.length > 50) {
+        
+    }
+}

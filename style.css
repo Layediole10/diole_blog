@@ -102,3 +102,12 @@ main {
 
     display: none;
 }
+
+
+/* ----------------responsive--------------------- */
+
+@media  screen and (max-width: 600px) {
+    header, #box {
+      width: 100%;
+    }
+  }
