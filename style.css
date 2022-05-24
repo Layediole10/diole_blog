@@ -107,7 +107,34 @@ main {
 /* ----------------responsive--------------------- */
 
 @media  screen and (max-width: 600px) {
+
+    body{
+        width: 600px;
+    }
     header, #box {
       width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
+
+    #box{
+        display: flex;
+        flex-direction: column;
+        width: 520px;
+
+        margin-left: 5%;
+    }
+
+    #first-pub{
+        width: 320px;
+    }
+
+    header ul{
+       
+        display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
   }
